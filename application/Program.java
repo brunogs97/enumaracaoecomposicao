@@ -37,7 +37,7 @@ public class Program {
             Date contractDate = sfd.parse(input.next());
             System.out.print("Value per hour: ");
             double valuePerHour = input.nextDouble();
-            System.out.println("Duration (hours): ");
+            System.out.print("Duration (hours): ");
             int hours = input.nextInt();
             HourContract contract = new HourContract(contractDate, valuePerHour, hours);
             worker.addContract(contract);
@@ -48,8 +48,8 @@ public class Program {
         String monthAndYear = input.next();
         int month = Integer.parseInt(monthAndYear.substring(0, 2));
         int year = Integer.parseInt(monthAndYear.substring(3));
-        System.out.print("Name: " + worker.getName());
-        System.out.print("Depertment: " + worker.getDepartament().getName());
-        System.out.print("Income for " + monthAndYear + ": " + String.format("%.2f", worker.income(year, month)));
+        System.out.println("Name: " + worker.getName());
+        System.out.println("Depertment: " + worker.getDepartament().getName());
+        System.out.println("Income for " + monthAndYear + ": " + String.format("%.2f", worker.income(year, month)));
     }
 }
