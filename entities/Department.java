@@ -1,13 +1,13 @@
 package entities;
 
-public class Departament {
+public class Department {
     private String name;
 
-    public Departament() {
+    public Department() {
 
     }
 
-    public Departament(String name) {
+    public Department(String name) {
         this.name = name;
     }
 

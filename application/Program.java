@@ -6,10 +6,10 @@ import java.text.SimpleDateFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Departament;
+import entities.Department;
 import entities.HourContract;
 import entities.Worker;
-import entities_enums.WorkerLevel;
+import entities.enums.WorkerLevel;
 public class Program {
     public static void main(String[] args) throws ParseException {
 
@@ -26,7 +26,7 @@ public class Program {
         String workerLevel = input.nextLine();
         System.out.print("Base salary: ");
         double baseSalary = input.nextDouble();
-        Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerName), baseSalary, new Departament(departmentName));
+        Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), baseSalary, new Department(departmentName));
 
         System.out.print("How many contracts to this worker? ");
         int n = input.nextInt();
